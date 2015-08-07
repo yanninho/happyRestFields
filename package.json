@@ -1,8 +1,8 @@
 {
   "name": "happyrestfields",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Express middleware to extract fields from request",
-  "main": "extractFields.js",
+  "main": "fields.js",
   "scripts": {
     "test": "mocha --ui bdd --reporter list -- test/*.js"
   },
