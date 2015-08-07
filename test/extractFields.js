@@ -4,7 +4,7 @@ var express = require('express')
 
 var app = express();
 
-app.use(extractFields());
+app.use(extractFields.extractFields);
 
 app.use(function(req, res, next){
   res.end(JSON.stringify(req.happyRest.fields));

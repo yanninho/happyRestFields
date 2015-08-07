@@ -24,7 +24,7 @@ var app = express();
 app.use(extractFields());
 
 app.use('/test?fields=name,mail,address(city)', function (req, res, next) {
-  console.log('Filters:', req.happyRest.fields);
+  console.log('Fields:', req.happyRest.fields);
   next();
 });
 
@@ -35,7 +35,7 @@ var express = require('express')
 
 var router = express.Router();
 
-router.get('/test?fields=name,mail,address(city)', extractFilters(), function (req, res, next) {
-	  console.log('Filters:', req.happyRest.fields);
+router.get('/test?fields=name,mail,address(city)', extractFields(), function (req, res, next) {
+	  console.log('Fields:', req.happyRest.fields);
 	  next();
 	})
