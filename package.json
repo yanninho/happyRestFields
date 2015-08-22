@@ -1,6 +1,6 @@
 {
   "name": "happyrestfields",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Express middleware to extract fields from request",
   "main": "fields.js",
   "scripts": {
